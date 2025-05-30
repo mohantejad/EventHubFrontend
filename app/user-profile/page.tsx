@@ -15,8 +15,6 @@ const UserDetails = () => {
   const [events, setEvents] = useState<EventType[]>([]);
   // State to track loading status
   const [loading, setLoading] = useState(true);
-  // State to hold user ID (not used in this code, but initialized)
-  const [userId, setUserId] = useState<string>('');
   // State to hold user details
   const [userDetails, setUserDetails] = useState<UserType>();
   // State to toggle edit mode for profile

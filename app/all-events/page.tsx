@@ -96,7 +96,7 @@ const AllEventsContent = () => {
       }
     };
     fetchEvents();
-  }, [city, searchKeyword, selectedCategory, selectedDate]);
+  }, [city, searchKeyword, selectedCategory, selectedDate, selectedMode, accessToken]);
 
   // Reset all filters to default
   const resetFilters = () => {

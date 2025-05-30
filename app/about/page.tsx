@@ -22,9 +22,9 @@ const AboutPage = () => {
             Who We Are
           </h2>
           <p className='text-gray-700 leading-6'>
-            We're a passionate team of developers and event enthusiasts
+            We&apos;re a passionate team of developers and event enthusiasts
             dedicated to making event planning and booking seamless. Whether
-            you're hosting an event or attending one, we've got the tools you
+            you&apos;re hosting an event or attending one, we&apos;ve got the tools you
             need to succeed.
           </p>
         </section>

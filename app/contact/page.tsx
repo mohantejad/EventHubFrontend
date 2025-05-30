@@ -34,7 +34,7 @@ const ContactPage = () => {
       // Reset form after successful submission
       setFormData({ name: '', email: '', message: '' });
     } catch (error) {
-      toast.error('Something went wrong. Please try again later.');
+      toast.error(`${error} Please try again later.`);
     } finally {
       setSubmitting(false);
     }

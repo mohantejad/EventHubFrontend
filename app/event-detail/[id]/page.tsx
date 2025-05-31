@@ -20,7 +20,7 @@ const EventDetail = () => {
     const fetchEvent = async () => {
       try {
         const res = await fetch(
-          `http://3.106.141.19/api/event/events/${id}/`
+          `/api/event/events/${id}/`
         );
         const data = await res.json();
         setEvent(data);

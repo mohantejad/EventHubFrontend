@@ -32,7 +32,7 @@ const ResetPasswordConfirmPage = () => {
     try {
       // Send POST request to backend to confirm password reset
       const response = await fetch(
-        'http://3.106.141.19/auth/users/reset_password_confirm/',
+        '/auth/users/reset_password_confirm/',
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },

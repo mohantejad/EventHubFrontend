@@ -15,7 +15,7 @@ export const fetchUser = async () => {
   if (!accessToken) return;
 
   try {
-    const response = await fetch('http://3.106.141.19/auth/users/me/', {
+    const response = await fetch('/auth/users/me/', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',

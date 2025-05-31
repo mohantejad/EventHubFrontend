@@ -15,7 +15,7 @@ interface EventCardProps {
 }
 
 const EventCard: React.FC<EventCardProps> = ({ event }) => {
-  const backendUrl = 'http://3.106.141.19';
+  const backendUrl = '';
 
   // Determine correct image URL for event
   const imageUrl =
@@ -73,7 +73,7 @@ const EventCard: React.FC<EventCardProps> = ({ event }) => {
       }
 
       const response = await fetch(
-        `http://3.106.141.19/api/event/events/${eventId}/`,
+        `/api/event/events/${eventId}/`,
         {
           method: 'DELETE',
           headers: {
@@ -121,7 +121,7 @@ const EventCard: React.FC<EventCardProps> = ({ event }) => {
         }
 
         const res = await fetch(
-          `http://3.106.141.19/api/event/events/${event.id}/like/`,
+          `/api/event/events/${event.id}/like/`,
           {
             method: 'POST',
             headers,

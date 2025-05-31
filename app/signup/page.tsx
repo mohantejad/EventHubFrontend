@@ -32,7 +32,7 @@ const Signup = () => {
   const onSubmit: SubmitHandler<SignupFormInputs> = async (data) => {
     try {
       // Send signup request to backend API
-      const response = await fetch('http://3.106.141.19/auth/users/', {
+      const response = await fetch('/auth/users/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),

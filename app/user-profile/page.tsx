@@ -39,7 +39,7 @@ const UserDetails = () => {
       // Fetch user profile data
       try {
         const userresponse = await fetch(
-          'http://3.106.141.19/auth/users/me/',
+          '/auth/users/me/',
           {
             method: 'GET',
             headers: {
@@ -72,7 +72,7 @@ const UserDetails = () => {
       // Fetch user's created events
       try {
         const eventResponse = await fetch(
-          'http://3.106.141.19/api/event/events/my_events/',
+          '/api/event/events/my_events/',
           {
             method: 'GET',
             headers: {
@@ -108,7 +108,7 @@ const UserDetails = () => {
       }
 
       // Send PATCH request to update user profile
-      const response = await fetch('http://3.106.141.19/auth/users/me/', {
+      const response = await fetch('/auth/users/me/', {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',

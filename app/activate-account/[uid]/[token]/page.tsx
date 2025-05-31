@@ -17,7 +17,7 @@ export default function ActivateAccountPage() {
     // Function to call backend API for account activation
     const activateAccount = async () => {
       try {
-        const res = await fetch('http://3.106.141.19/auth/users/activation/', {
+        const res = await fetch('/auth/users/activation/', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

@@ -83,7 +83,7 @@ const CreateEventPage = () => {
       }
 
       // Send POST request to backend to create the event
-      const response = await fetch('http://3.106.141.19/api/event/events/', {
+      const response = await fetch('/api/event/events/', {
         method: 'POST',
         headers: token ? { Authorization: `JWT ${token}` } : {},
         body: formData,

@@ -26,7 +26,7 @@ const ForgotPassword = () => {
     try {
       // Send POST request to backend to trigger password reset email
       const response = await fetch(
-        'http://3.106.141.19/auth/users/reset_password/',
+        '/auth/users/reset_password/',
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },

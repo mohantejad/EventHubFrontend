@@ -54,7 +54,7 @@ const CheckoutClient = () => {
     if (!validateExpiry(expiry)) return setError('Invalid expiry date.');
     if (!validateCVV(cvv)) return setError('Invalid CVV.');
 
-    const response = await fetch('http://3.106.141.19/api/event/booking/', {
+    const response = await fetch('/api/event/booking/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ name, email, quantity, event: eventId }),

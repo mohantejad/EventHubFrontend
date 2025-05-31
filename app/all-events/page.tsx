@@ -48,7 +48,7 @@ const AllEventsContent = () => {
     const fetchEvents = async () => {
       try {
         // Build API URL with query parameters
-        let apiUrl = `http://3.106.141.19/api/event/events/?`;
+        let apiUrl = `/api/event/events/?`;
         if (city) apiUrl += `city=${encodeURIComponent(city)}&`;
         if (searchKeyword)
           apiUrl += `search=${encodeURIComponent(searchKeyword)}&`;

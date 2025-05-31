@@ -32,7 +32,7 @@ const Page = () => {
   const onSubmit: SubmitHandler<LoginFormInputs> = async (data) => {
     try {
       // Send login request to backend API
-      const response = await fetch('http://3.106.141.19/auth/jwt/create/', {
+      const response = await fetch('/auth/jwt/create/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),
@@ -51,7 +51,7 @@ const Page = () => {
       localStorage.setItem('refreshToken', refresh);
 
       // Fetch user data using the access token
-      const userResponse = await fetch('http://3.106.141.19/auth/users/me/', {
+      const userResponse = await fetch('/auth/users/me/', {
         method: 'GET',
         headers: { Authorization: `JWT ${access}` },
       });

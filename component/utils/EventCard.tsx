@@ -150,7 +150,7 @@ const EventCard: React.FC<EventCardProps> = ({ event }) => {
         {/* Event image */}
         <div className='relative w-full h-56'>
           <Image
-            src={imageUrl}
+            src={event.image.startsWith('http') ? event.image.replace('http://3.106.141.19', '') : event.image}
             alt={event.title}
             fill
             className='object-cover'
